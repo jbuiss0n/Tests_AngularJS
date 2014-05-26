@@ -1,19 +1,19 @@
 'use strict';
 
 angular
-  .module('angularJsApp', [
+  .module('myTodoList', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
     'ngRoute'
   ])
   .config(function ($routeProvider) {
-    $routeProvider
+  	$routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      	templateUrl: 'views/main.html',
+      	controller: 'MainController'
       })
       .otherwise({
-        redirectTo: '/'
+      	redirectTo: '/'
       });
   });

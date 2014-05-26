@@ -1,0 +1,7 @@
+.list-group .btn {
+	margin: 0px 2px;
+}
+
+.list-group .item-done {
+	text-decoration: line-through;
+}
