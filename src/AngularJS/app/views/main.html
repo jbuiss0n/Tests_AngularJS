@@ -2,8 +2,8 @@
 	<li class="list-group-item" ng-repeat="item in items" ng-class="{ 'item-done': item.Done }">
 		<span class="glyphicon glyphicon-bookmark"></span>
 		{{ item.Description }}
-		<span class="btn btn-default btn-xs pull-right" ng-click="delete(item)"><span class="glyphicon glyphicon-trash"></span></span>
-		<span class="btn btn-default btn-xs pull-right" ng-click="check(item)"><span class="glyphicon glyphicon-ok"></span></span>
+		<span ng-show="item.Done" class="btn btn-default btn-xs pull-right" ng-click="delete(item)"><span class="glyphicon glyphicon-trash"></span></span>
+		<span ng-show="!item.Done" class="btn btn-default btn-xs pull-right" ng-click="check(item)"><span class="glyphicon glyphicon-ok"></span></span>
 	</li>
 </ul>
 
