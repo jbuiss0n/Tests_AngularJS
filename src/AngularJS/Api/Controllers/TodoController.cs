@@ -19,7 +19,10 @@ namespace Api.Controllers
 
 		public IHttpActionResult Get(int id)
 		{
-			var todo = Database.Todos[id];
+			var todo = Database.Todos.FirstOrDefault(t => t.Id == id);
+
+			if (todo == null)
+				return NotFound();
 
 			return Ok(todo);
 		}
@@ -28,16 +31,36 @@ namespace Api.Controllers
 		{
 			Database.Todos.Add(todo);
 
-			var id = Database.Todos.Count;
+			var url = Url.Link("DefaultApi", new { id = todo.Id });
 
-			return Created(Url.Link("DefaultApi", new { id = id }), todo);
+			return Created(url, todo);
 		}
 
-		public IHttpActionResult Delete(int id, [FromBody]Todo todo)
+		public IHttpActionResult Put(int id, [FromBody]Todo update)
 		{
+			var todo = Database.Todos.FirstOrDefault(t => t.Id == id);
+
+			if (todo == null)
+				return NotFound();
+
+			var index = Database.Todos.IndexOf(todo);
+			Database.Todos[index] = update;
+
+			var url = Url.Link("DefaultApi", new { id = update.Id });
+
+			return Created(url, todo);
+		}
+
+		public IHttpActionResult Delete(int id)
+		{
+			var todo = Database.Todos.FirstOrDefault(t => t.Id == id);
+
+			if (todo == null)
+				return NotFound();
+
 			Database.Todos.Remove(todo);
 
-			return Ok(todo);
+			return Ok();
 		}
 	}
 }
