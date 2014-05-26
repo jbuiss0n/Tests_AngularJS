@@ -1,0 +1,6 @@
+﻿<ul class="list-group">
+	<li class="list-group-item" ng-repeat="item in items">
+		<span ng-class="{ 'glyphicon glyphicon-ok': item.done, 'glyphicon glyphicon-bookmark': !item.done }"></span>
+		{{ item.desc }}
+	</li>
+</ul>
