@@ -45,8 +45,8 @@ namespace Api.Controllers
 			if (todo == null)
 				return NotFound();
 
-			var index = Database.Todos.IndexOf(todo);
-			Database.Todos[index] = update;
+			todo.Description = update.Description;
+			todo.Done = update.Done;
 
 			var url = Url.Link("DefaultApi", new { id = update.Id });
 

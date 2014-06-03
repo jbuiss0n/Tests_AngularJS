@@ -1,29 +1,36 @@
-'use strict';
+(function () {
+  'use strict';
 
-angular.module('myTodoList')
-  .controller('MainController', ['$scope', 'TodoService', function ($scope, TodoService) {
+  angular.module('myTodoList')
+    .controller('MainController', ['$scope', 'TodoService', function ($scope, TodoService) {
 
-  	var loadTodo = function () {
-  		TodoService.query(function (items) {
-  			$scope.items = items;
-  		});
-  	};
+      $scope.add = function () {
+        TodoService.save({ Description: $scope.Description }, function (task) {
+          $scope.Description = '';
+          $scope.items.push(task);
+        });
+      };
 
-  	$scope.add = function () {
-  		TodoService.save({ Description: $scope.Description }, function () {
-  			$scope.Description = '';
-  			loadTodo();
-  		});
-  	};
+      $scope.delete = function (item) {
+        if (!item.Done) {
+          return;
+        }
 
-  	$scope.delete = function (item) {
-  		TodoService.delete(item, loadTodo);
-  	};
+        var index = $scope.items.indexOf(item);
+        TodoService.delete({ id: item.Id }, function () {
+          $scope.items.splice(index, 1);
+        });
+      };
 
-  	$scope.check = function (item) {
-  		item.Done = true;
-  		TodoService.update({ id: item.Id }, item, loadTodo);
-  	};
+      $scope.check = function (item) {
+        TodoService.update({ id: item.Id }, { Description: item.Description, Done: true }, function (result) {
+          item.Done = result.Done;
+        });
+      };
 
-  	loadTodo();
-  }]);
+      TodoService.query(function (items) {
+        $scope.items = items;
+      });
+
+    }]);
+}());
