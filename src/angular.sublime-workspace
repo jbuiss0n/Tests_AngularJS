@@ -1,0 +1,336 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"image",
+				"imageUrl"
+			],
+			[
+				"get",
+				"getRubrique"
+			],
+			[
+				"nextcate",
+				"nextCategoryOrder"
+			],
+			[
+				"nextr",
+				"nextRubriqueOrder"
+			],
+			[
+				"nextCate",
+				"nextCategoryOrder"
+			],
+			[
+				"nextca",
+				"nextCategoryOrder"
+			],
+			[
+				"categ",
+				"categories"
+			],
+			[
+				"date",
+				"startRightDate"
+			],
+			[
+				"cont",
+				"contents"
+			],
+			[
+				"sta",
+				"strates"
+			],
+			[
+				"st",
+				"strate"
+			],
+			[
+				"ava",
+				"availableContents"
+			],
+			[
+				"first",
+				"firstCategory"
+			],
+			[
+				"av",
+				"availableContents"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"curent",
+				"currentRubrique"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"visi",
+				"visibles"
+			],
+			[
+				"_v",
+				"_viewUrl"
+			],
+			[
+				"rub",
+				"rubrique"
+			],
+			[
+				"rubr",
+				"rubriqueApi"
+			],
+			[
+				"Uive",
+				"UniverseApi"
+			],
+			[
+				"isv",
+				"isDocumentValid"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"no",
+				"normalizeKey"
+			],
+			[
+				"dat",
+				"dateActual"
+			],
+			[
+				"es",
+				"eventStream"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/api/rubriqueApi.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/api/universeApi.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/templates/landing-grid.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/templateHelper.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/templates/admin-editor.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-090-helpers.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/helpers.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/templates/rubrique-grid.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/api/couchApiBase.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/api/contentApi.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/api/categoryApi.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/fixtures/050-rubrique-api/parseRows.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-050-rubrique-api.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-060-category-api.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/fixtures/060-parseRows.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/universeApi.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/rubriqueApi.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/categoryApi.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/views/resources/map.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/test/test-000-get-documents-by-id.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/test/test-100-landing-view.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/test/test-300-show-content.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/test/test-200-rubrique-view.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/test/test-400-rewrites.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-000-instanciate.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-010-run-program.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-020-proxy.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-030-couch-api-base.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-040-universe-api.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-070-content-api.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-080-couch-url.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/test-900-linqtoj.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/couchUrl.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/index.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/contentApi.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/lib/rewrites.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/couchApiBase.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/optionParser.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/config.example.json",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/package.json",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/bin/ipad-aggregate",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/test/utils.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/lists/rubriqueGrid.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/shows/content.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/templates/landing.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/lists/landingGrid.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/linqToJ.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/contentHelper.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/updates/universes.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/shows/universes.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/updates/categories.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/kanso.json",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/server/lib/universeApi_.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/views/univers/reduce.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/views/univers/map.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/couch/views/resource_view/map.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/.gitignore",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/views/resource_view/map.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/lists/rubriqueGrid.js",
+		"/home/jeb/Projects/COS-VOD/ipad-couch-app/lists/landingGrid.js",
+		"/usr/share/sublime.desktop"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"{   ",
+			"dateEndRight",
+			"dateStartRight",
+			"couchUrl",
+			" // var s = '['\n  // keys.forEach(function (key) {\n  //   s += '\"' + key + '\",';\n  // });\n  // return s.substr(0, s.length - 1) + ']';",
+			"CategoryApi",
+			"( ",
+			" )",
+			"        \n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"endRightDate",
+			"startRightDate",
+			"ContentApi"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "angular.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

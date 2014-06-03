@@ -1,4 +1,6 @@
 node_modules
+quality
+coverage
 dist
 .tmp
 .sass-cache
