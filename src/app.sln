@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Web
+# Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "app(1)", "http://localhost:55497", "{81EA6B39-E4EF-4DA4-B16D-EC0167203651}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "app", "http://localhost:55497", "{81EA6B39-E4EF-4DA4-B16D-EC0167203651}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
@@ -24,7 +24,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "app(1)", "http://localhost:
 		SlnRelativePath = "app\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{A3446650-C61F-4792-9FE0-90D5B000D77A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", ".\Api\Api.csproj", "{A3446650-C61F-4792-9FE0-90D5B000D77A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
