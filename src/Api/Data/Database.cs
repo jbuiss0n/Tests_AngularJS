@@ -28,6 +28,10 @@ namespace Api.Data
 
 		public string Description { get; set; }
 
+		public DateTime Duedate { get; set; }
+
+		public byte? Priority { get; set; }
+
 		public bool Done { get; set; }
 
 		public Todo()
