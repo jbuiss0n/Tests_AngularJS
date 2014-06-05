@@ -46,6 +46,8 @@ namespace Api.Controllers
 				return NotFound();
 
 			todo.Description = update.Description;
+			todo.Duedate = update.Duedate;
+			todo.Priority = update.Priority;
 			todo.Done = update.Done;
 
 			var url = Url.Link("DefaultApi", new { id = update.Id });

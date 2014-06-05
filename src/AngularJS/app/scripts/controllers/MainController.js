@@ -3,13 +3,16 @@
 
   angular.module('myTodoList').controller('MainController', ['$scope', 'TodoService', 'DateHelper', function ($scope, TodoService, DateHelper) {
 
+    var initModel = function () {
+      $scope.model = { Description: '', Duedate: '', Priority: '', Done: false };
+    };
+
     $scope.today = DateHelper.getTodayISO();
-    $scope.model = { Description: '', Duedate: '', Priority: '', Done: false };
 
     $scope.add = function () {
       TodoService.save($scope.model, function (task) {
-        $scope.Description = '';
         $scope.items.push(task);
+        initModel();
       });
     };
 
@@ -39,5 +42,6 @@
       $scope.items = items;
     });
 
+    initModel();
   }]);
 }());
