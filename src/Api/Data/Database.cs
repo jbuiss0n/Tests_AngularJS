@@ -28,7 +28,7 @@ namespace Api.Data
 
 		public string Description { get; set; }
 
-		public DateTime Duedate { get; set; }
+		public DateTime? Duedate { get; set; }
 
 		public byte? Priority { get; set; }
 
