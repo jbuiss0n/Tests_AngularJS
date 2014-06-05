@@ -1,0 +1,33 @@
+﻿<form role="form" name="form" novalidate class="panel panel-default">
+  <div class="panel-heading">
+    Create new task
+  </div>
+
+  <div class="panel-body">
+    <div class="input-group">
+      <input class="form-control" type="text" placeholder="Description" ng-model="model.Description" name="description" ng-escape="reset('Description')" required />
+      <span ng-show="form.description.$invalid" class="input-group-addon alert-danger"><span class="glyphicon glyphicon-remove"></span></span>
+      <span ng-show="form.description.$valid" class="input-group-addon alert-success"><span class="glyphicon glyphicon-ok"></span></span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <div class="input-group">
+      <input class="form-control" type="date" placeholder="Due date" ng-model="model.Duedate" name="duedate" ng-escape="resetField('Duedate')" min="{{ today }}" />
+      <span ng-show="form.duedate.$invalid" class="input-group-addon alert-danger"><span class="glyphicon glyphicon-remove"></span></span>
+      <span ng-show="form.duedate.$valid" class="input-group-addon alert-success"><span class="glyphicon glyphicon-ok"></span></span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <div class="input-group">
+      <input class="form-control" type="number" placeholder="Priority" ng-model="model.Priority" name="priority" ng-escape="resetField('Priority')" min="0" max="10" />
+      <span ng-show="form.duedate.$invalid" class="input-group-addon alert-danger"><span class="glyphicon glyphicon-remove"></span></span>
+      <span ng-show="form.duedate.$valid" class="input-group-addon alert-success"><span class="glyphicon glyphicon-ok"></span></span>
+    </div>
+  </div>
+
+  <div class="panel-footer clearfix">
+    <button class="btn btn-xs btn-primary pull-right" ng-click="add()" ng-disabled="form.$invalid">Add the new task</button>
+  </div>
+</form>

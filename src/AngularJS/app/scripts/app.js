@@ -6,7 +6,9 @@
       'ngCookies',
       'ngResource',
       'ngSanitize',
-      'ngRoute'
+      'ngRoute',
+      'helpers',
+      'input-helpers'
     ])
     .config(function ($routeProvider) {
       $routeProvider

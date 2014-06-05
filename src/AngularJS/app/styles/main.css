@@ -1,7 +1,28 @@
 .list-group .btn {
-	margin: 0px 2px;
+	margin: 0 2px;
 }
 
 .list-group .item-done {
 	text-decoration: line-through;
 }
+
+.fixed-side-panel {
+	position: fixed;
+	width: 33%;
+	right: -50%;
+	opacity: 0;
+	top: 0;
+	-moz-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+	box-shadow: -3px 3px 7px 1px #ECECEC;
+	margin: 15px 0 15px 0;
+	border: 1px solid #ECECEC;
+	z-index: 2;
+}
+
+	.fixed-side-panel.active {
+		right: 10%;
+		opacity: 1;
+	}
